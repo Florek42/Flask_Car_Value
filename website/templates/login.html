@@ -1,0 +1,35 @@
+{% extends "origin.html" %}
+{% block title %} Login {% endblock %}
+
+
+{% block content %} 
+<form action="POST">
+    <h2 align="center">Sign-up</h2>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input 
+            type="email" 
+            class="form-control" 
+            name="email" 
+            id="email" 
+            placeholder="Enter your email"
+        >
+
+        <label for="email">Password:</label>
+        <input 
+            type="password" 
+            class="form-control" 
+            name="password" 
+            id="password" 
+            placeholder="Enter your password"
+        >
+    </div>
+<br>
+
+    <button type="submit" class="btn btn-outline-dark">
+        Login
+    </button>
+
+</form>
+{% endblock %}
