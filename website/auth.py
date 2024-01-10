@@ -11,11 +11,11 @@ def login():
 def register():
     if request.method == 'POST':
         email = request.form.get('email')
-        firstName = request.form.get('firstName')
+        nickname = request.form.get('nickname')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
 
-        if len(firstName) < 5:
+        if len(nickname) < 5:
             flash('Your name must have at least 5 characters!', category='error')
         elif len(password1) < 6:
             flash('Password must have at least 6 characters!', category='error')
